@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Tugas 3 &#8212; My sample book</title>
+    <title>Tugas 3 (K-NN) &#8212; My sample book</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tugas 4" href="Tugas4.html" />
-    <link rel="prev" title="Tugas 2" href="Tugas2.html" />
+    <link rel="next" title="Tugas 4 (Gaussian Naive Bayes)" href="Tugas4.html" />
+    <link rel="prev" title="Tugas 2 (Distraksi)" href="Tugas2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -132,26 +132,42 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas2.html">
    <strong>
-    Tugas 2
+    Tugas 2 (Distraksi)
    </strong>
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Tugas 3
+   <strong>
+    Tugas 3 (K-NN)
+   </strong>
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas4.html">
    <strong>
-    Tugas 4
+    Tugas 4 (Gaussian Naive Bayes)
    </strong>
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas5.html">
    <strong>
-    Tugas 5
+    Tugas 5 (K-Means)
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas6.html">
+   <strong>
+    Tugas 6 (Decision Tree)
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="UTS.html">
+   <strong>
+    UTS
    </strong>
   </a>
  </li>
@@ -339,70 +355,23 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Tugas 3
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#implementasi-k-nn-pada-dataset-iris">
-   Implementasi K-NN pada dataset iris
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Tugas 3</h1>
+                <h1>Tugas 3 (K-NN)</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Tugas 3
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#implementasi-k-nn-pada-dataset-iris">
-   Implementasi K-NN pada dataset iris
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -410,11 +379,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tugas-3">
-<h1>Tugas 3<a class="headerlink" href="#tugas-3" title="Permalink to this headline">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="implementasi-k-nn-pada-dataset-iris">
-<h1>Implementasi K-NN pada dataset iris<a class="headerlink" href="#implementasi-k-nn-pada-dataset-iris" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-3-k-nn">
+<h1><strong>Tugas 3 (K-NN)</strong><a class="headerlink" href="#tugas-3-k-nn" title="Permalink to this headline">#</a></h1>
+<p>Implementasi K-NN pada dataset iris</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -427,7 +394,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-b596a084-6179-4c2a-8015-b3fbd65d0f17">
+  <div id="df-c990567a-8368-47c0-b44d-d9136786fde4">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -547,7 +514,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-b596a084-6179-4c2a-8015-b3fbd65d0f17')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c990567a-8368-47c0-b44d-d9136786fde4')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -598,12 +565,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-b596a084-6179-4c2a-8015-b3fbd65d0f17 button.colab-df-convert');
+          document.querySelector('#df-c990567a-8368-47c0-b44d-d9136786fde4 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-b596a084-6179-4c2a-8015-b3fbd65d0f17');
+          const element = document.querySelector('#df-c990567a-8368-47c0-b44d-d9136786fde4');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -635,7 +602,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-bfed7c22-b09c-4ef2-8cd1-f7bf28bd0615">
+  <div id="df-513ffa4c-f355-46be-af14-e0a72d82af64">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -700,7 +667,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-bfed7c22-b09c-4ef2-8cd1-f7bf28bd0615')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-513ffa4c-f355-46be-af14-e0a72d82af64')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -751,12 +718,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-bfed7c22-b09c-4ef2-8cd1-f7bf28bd0615 button.colab-df-convert');
+          document.querySelector('#df-513ffa4c-f355-46be-af14-e0a72d82af64 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-bfed7c22-b09c-4ef2-8cd1-f7bf28bd0615');
+          const element = document.querySelector('#df-513ffa4c-f355-46be-af14-e0a72d82af64');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -946,13 +913,13 @@ cv_scores mean:0.9666666666666668
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><strong>Tugas 2</strong></p>
+            <p class="prev-next-title"><strong>Tugas 2 (Distraksi)</strong></p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="Tugas4.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>Tugas 4</strong></p>
+        <p class="prev-next-title"><strong>Tugas 4 (Gaussian Naive Bayes)</strong></p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
