@@ -1,4 +1,6 @@
-# Welcome to your Jupyter Book
+# Selamat Datang
+
+Ini adalah website statis saya untuk tugas Mata Kuliah Data Mining.
 
 This is a small sample book to give you a feel for how book content is
 structured.
@@ -7,5 +9,6 @@ It does not go in-depth into any particular topic - check out [the Jupyter Book 
 
 Check out the content pages bundled with this sample book to see more.
 
+Tugas Data Mining
 ```{tableofcontents}
 ```
